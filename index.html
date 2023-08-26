@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title>Cultural Heritage of West Bengal</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1>Cultural Heritage of West Bengal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#history">History</a></li>
+            <li><a href="#art">Art and Crafts</a></li>
+            <li><a href="#festivals">Festivals</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <section id="home">
+            <div class="intro">
+                <img src="https://wbhc.in/assets/images/west_bengal_map.png" alt="West Bengal">
+                <div class="intro-text">
+                    <h2>Welcome to West Bengal's Cultural Heritage</h2>
+                    <p>Discover the rich cultural tapestry of West Bengal, India.</p>
+                </div>
+            </div>
+        </section>
+        <section id="history">
+            <h2>History and Heritage</h2>
+            <div class="history-content">
+                <div class="history-text">
+                    <p>Explore the historical significance of West Bengal's cultural heritage.</p>
+                </div>
+                <div class="history-image">
+                    <img src="https://cdn.britannica.com/78/142578-050-F3CEFF46/Nizamat-Kila-palace-nawabs-Murshidabad-West-Bengal.jpg" alt="History Image">
+                    <img src="https://cdn.britannica.com/91/110191-050-7BCFD56B/Victoria-Memorial-Hall-Kolkata-India.jpg" alt="History Image">
+                    <img src="https://cdn.britannica.com/91/110191-050-7BCFD56B/Victoria-Memorial-Hall-Kolkata-India.jpg" alt="History Image">
+                    <img src="https://cdn.britannica.com/91/110191-050-7BCFD56B/Victoria-Memorial-Hall-Kolkata-India.jpg" alt="History Image">
+                    <img src="https://cdn.britannica.com/91/110191-050-7BCFD56B/Victoria-Memorial-Hall-Kolkata-India.jpg" alt="History Image">
+                </div>
+            </div>
+        </section>
+        <script>
+            const historyImages = document.querySelectorAll('.history-image img');
+            let currentImageIndex = 0;
+        
+            function changeHistoryImage() {
+                historyImages[currentImageIndex].classList.remove('active');
+                currentImageIndex = (currentImageIndex + 1) % historyImages.length;
+                historyImages[currentImageIndex].classList.add('active');
+            }
+        
+            setInterval(changeHistoryImage, 3000); // Change image every 3 seconds
+        </script>
+        <section id="art">
+            <h2>Art and Crafts</h2>
+            <p>Experience the exquisite artistry of Bengal's traditional crafts.</p>
+        </section>
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-container">
+                <img src="https://i0.wp.com/thestrongtraveller.com/wp-content/uploads/2021/09/Tourisim-Charida-Masks-1.jpg?fit=870%2C580&ssl=1" alt="Image 1">
+                <img src="https://pushpakbanerjee.files.wordpress.com/2012/02/img_7625_2816x1880.jpg" alt="Image 2">
+                <img src="https://www.asianstudies.org/wp-content/uploads/Kolkatatemple-1024x683.jpg" alt="Image 3">
+                <img src="https://hindupost.in/wp-content/uploads/2022/10/image-180-696x427.png" alt="Image 4">
+                <img src="https://res.cloudinary.com/tourhq/image/upload/c_fill,f_auto,fl_progressive,g_auto,h_493,q_auto:best,w_876/n0txrhatb4axdsnhhgvp" alt="Image 5">
+                <img src="https://img.traveltriangle.com/blog/wp-content/uploads/2023/04/Festivals-in-Kolkata.jpg" alt="Image 6">
+            </div>
+        </section>
+        <section id="festivals">
+            <h2>Festivals and Celebrations</h2>
+            <p>Participate in the vibrant festivals that showcase the spirit of West Bengal.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Cultural Heritage of West Bengal. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
